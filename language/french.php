@@ -1,28 +1,18 @@
 <?php
-/*
- * Project:     EQdkp-Plus
- * License:     Creative Commons - Attribution-Noncommercial-Share Alike 3.0 Unported
- * Link:		http://creativecommons.org/licenses/by-nc-sa/3.0/
- * -----------------------------------------------------------------------
- * Began:       2008
- * Date:        $Date: 2008-07-30 13:56:27 +0200 (Mi, 30 Jul 2008) $
- * -----------------------------------------------------------------------
- * @author      $Author: wallenium $
- * @copyright   2006-2008 Corgan - Stefan Knaak | Wallenium & the EQdkp-Plus Developer Team
- * @link        http://eqdkp-plus.com
- * @package     eqdkp-plus
- * @version     $Rev: 2465 $
- * 
- * $Id: english.php 2465 2008-07-30 11:56:27Z wallenium $
- */
 
-if ( !defined('EQDKP_INC') ){
-    header('HTTP/1.0 404 Not Found');exit;
+if (!defined('EQDKP_INC')) {
+	die('You cannot access this file directly.');
 }
 
-$plang = array_merge($plang, array(
-  'mycontent'                 => 'Mon contenu',
-  'pk_mycontent_useroutput'   => 'Entrer le contenu à afficher',
-  'pk_mycontent_headtext'     => 'Titre du module',
-));
+//Language: French	
+//Created by EQdkp Plus Translation Tool on  2010-07-09 13:55
+//File: module_mycontent
+//Source-Language: english
+
+$alang = array( 
+"mycontent" => "Mon contenu",
+"pk_mycontent_useroutput" => "Entrer le contenu à afficher",
+"pk_mycontent_headtext" => "Titre du module",
+ );
+$plang = array_merge($plang, $alang);
 ?>
