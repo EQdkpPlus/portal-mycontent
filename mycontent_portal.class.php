@@ -65,8 +65,7 @@ class mycontent_portal extends portal_generic {
 		if($this->config('pk_mycontent_headtext')){
 			$this->header = sanitize($this->config('pk_mycontent_headtext'));
 		}
-		return html_entity_decode(htmlspecialchars_decode($this->config('pk_mycontent_useroutput')));
+		return xhtml_entity_decode(htmlspecialchars_decode($this->config('pk_mycontent_useroutput')));
 	}
 }
-if(version_compare(PHP_VERSION, '5.3.0', '<')) registry::add_const('short_mycontent_portal', mycontent_portal::__shortcuts());
 ?>
