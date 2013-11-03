@@ -31,6 +31,7 @@ class mycontent_portal extends portal_generic {
 		'name'			=> 'Custom Content Module',
 		'version'		=> '2.0.1',
 		'author'		=> 'WalleniuM',
+		'icon'			=> 'fa-star',
 		'contact'		=> EQDKP_PROJECT_URL,
 		'description'	=> 'Output a custom content',
 	);
