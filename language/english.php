@@ -24,7 +24,7 @@ $lang = array(
 	'mycontent'					=> 'My Content',
 	'mycontent_name'			=> 'Custom Content Module',
 	'mycontent_desc'			=> 'Output a custom content',
-	'pk_mycontent_useroutput'	=> 'Enter the content to show',
-	'pk_mycontent_headtext'		=> 'Module Title',
+	'mycontent_f_useroutput'	=> 'Enter the content to show',
+	'mycontent_f_headtext'		=> 'Module Title',
 );
 ?>
