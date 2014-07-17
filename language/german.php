@@ -25,6 +25,5 @@ $lang = array(
 	'mycontent_name'			=> 'Eigener Inhalt',
 	'mycontent_desc'			=> 'Gib einen eigenen Inhalt auf der Seite aus',
 	'mycontent_f_useroutput'	=> 'Gib einen Inhalt zur Anzeigen ein',
-	'mycontent_f_headtext'		=> 'Titel des Moduls',
 );
 ?>

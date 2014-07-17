@@ -35,10 +35,6 @@ class mycontent_portal extends portal_generic {
 	);
 	protected static $positions = array('middle', 'left1', 'left2', 'right', 'bottom');
 	protected $settings	= array(
-		'headtext'		=> array(
-			'type'		=> 'text',
-			'size'		=> '30',
-		),
 		'useroutput'	=> array(
 			'type'		=> 'textarea',
 			'cols'		=> '40',
@@ -53,9 +49,6 @@ class mycontent_portal extends portal_generic {
 	);
 
 	public function output() {
-		if($this->config('headtext')){
-			$this->header = sanitize($this->config('headtext'));
-		}
 		return xhtml_entity_decode(htmlspecialchars_decode($this->config('useroutput')));
 	}
 }
