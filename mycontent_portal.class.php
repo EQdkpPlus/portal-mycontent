@@ -47,6 +47,8 @@ class mycontent_portal extends portal_generic {
 		'defaultposition'	=> 'right',
 		'defaultnumber'		=> '7',
 	);
+	
+	protected static $apiLevel = 20;
 
 	public function output() {
 		return xhtml_entity_decode(htmlspecialchars_decode($this->config('useroutput')));
