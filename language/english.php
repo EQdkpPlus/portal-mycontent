@@ -1,6 +1,6 @@
 <?php
 /*	Project:	EQdkp-Plus
- *	Package:	MyContent Portal Module
+ *	Package:	EQdkp-Plus Language File
  *	Link:		http://eqdkp-plus.eu
  *
  *	Copyright (C) 2006-2015 EQdkp-Plus Developer Team
@@ -19,14 +19,22 @@
  *	along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-if ( !defined('EQDKP_INC') ){
-	header('HTTP/1.0 404 Not Found');exit;
+ 
+if (!defined('EQDKP_INC')) {
+	die('You cannot access this file directly.');
 }
 
-$lang = array(
-	'mycontent'					=> 'My Content',
-	'mycontent_name'			=> 'Custom Content Module',
-	'mycontent_desc'			=> 'Output a custom content',
-	'mycontent_f_useroutput'	=> 'Enter the content to show',
+//Language: English	
+//Created by EQdkp Plus Translation Tool on  2014-12-17 21:28
+//File: portal/mycontent/language/english.php
+//Source-Language: german
+
+$lang = array( 
+	"mycontent" => 'My Content',
+	"mycontent_name" => 'Custom Content Module',
+	"mycontent_desc" => 'Output a custom content',
+	"mycontent_f_useroutput" => 'Enter the content to show',
+	
 );
+
 ?>
