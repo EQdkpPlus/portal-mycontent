@@ -28,7 +28,7 @@ class mycontent_portal extends portal_generic {
 	protected static $path		= 'mycontent';
 	protected static $data		= array(
 		'name'			=> 'Custom Content Module',
-		'version'		=> '2.0.1',
+		'version'		=> '3.0.0',
 		'author'		=> 'WalleniuM',
 		'icon'			=> 'fa-code',
 		'contact'		=> EQDKP_PROJECT_URL,
