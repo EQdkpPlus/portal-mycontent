@@ -39,9 +39,8 @@ class mycontent_portal extends portal_generic {
 	protected static $positions = array('middle', 'left1', 'left2', 'right', 'bottom');
 	protected $settings	= array(
 		'useroutput'	=> array(
-			'type'		=> 'textarea',
-			'cols'		=> '40',
-			'rows'		=> '8',
+			'type'		=> 'htmleditor',
+			'textarea_height' => '250px',
 			'codeinput'	=> true,
 		),		
 	);
