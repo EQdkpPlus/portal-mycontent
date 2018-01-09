@@ -3,7 +3,7 @@
  *	Package:	MyContent Portal Module
  *	Link:		http://eqdkp-plus.eu
  *
- *	Copyright (C) 2006-2015 EQdkp-Plus Developer Team
+ *	Copyright (C) 2006-2016 EQdkp-Plus Developer Team
  *
  *	This program is free software: you can redistribute it and/or modify
  *	it under the terms of the GNU Affero General Public License as published
@@ -28,7 +28,7 @@ class mycontent_portal extends portal_generic {
 	protected static $path		= 'mycontent';
 	protected static $data		= array(
 		'name'			=> 'Custom Content Module',
-		'version'		=> '3.0.0',
+		'version'		=> '3.1.0',
 		'author'		=> 'WalleniuM',
 		'icon'			=> 'fa-code',
 		'contact'		=> EQDKP_PROJECT_URL,
@@ -54,7 +54,9 @@ class mycontent_portal extends portal_generic {
 	protected static $apiLevel = 20;
 
 	public function output() {
-		return xhtml_entity_decode(htmlspecialchars_decode($this->config('useroutput')));
+		$out = xhtml_entity_decode(htmlspecialchars_decode($this->config('useroutput')));
+		$out = $this->bbcode->parse_shorttags($out);
+		return $out;
 	}
 }
 ?>
